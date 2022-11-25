@@ -11,26 +11,28 @@
 .header {
   display: flex;
   flex-direction: column;
-  position: relative;
   justify-content: center;
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  padding-left: 64px;
   background-color: #f2f2f2;
 }
 
 .header__title {
   width: 730px;
+  margin: 0;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
   z-index: 2;
+  margin-left: 64px;
 }
 
 .header__subtitle {
   position: absolute;
   bottom: 30px;
+  left: 64px;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -76,16 +78,13 @@
 .logo_place_header {
   position: absolute;
   top: 30px;
+  left: 64px;
   z-index: 2;
 }
 
 /* Description */
 
 .description {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
   margin: 100px 0;
 }
 
@@ -94,6 +93,7 @@
 .two-columns {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -109,16 +109,12 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  font-size: 24px;
-  line-height: 34px;
 }
 
 .two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
   margin: 0;
-
-}
-
-.two-columns__paragraph:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -129,10 +125,6 @@
 /* Digits */
 
 .digits {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
   margin: 100px 0;
 }
 
@@ -141,11 +133,15 @@
 .section-title {
   width: 60%;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  z-index: 1;
+  z-index: 10;
+}
+
+.section-title_theme_dark {
+  color: white;
 }
 
 /* Section-subtitle */
@@ -153,34 +149,38 @@
 .section-subtitle {
   width: 60%;
   text-align: center;
-  margin: 20px 0 0;
+  padding-top: 20px;
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 24px;
-  z-index: 1;
+  z-index: 10;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 /* Table */
 
 .table {
   display: flex;
+  position: relative;
   width: 1100px;
   justify-content: space-between;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 10;
   padding: 0;
-}
-
-.table_theme_dark {
-  color: white;
+  margin: 0 auto;
 }
 
 .table__cell {
   list-style: none;
-  margin-top: 60px;
+  padding-top: 60px;
   width: 250px;
 }
 
 .table__cell_theme_dark {
+  color: white;
   margin-top: 80px;
   width: 200px;
 }
@@ -254,13 +254,9 @@
 /* Kaufman */
 
 .kaufman {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  align-items: center;
   overflow: hidden;
   background-color: #1f1f1f;
-  color: #fff;
   padding: 90px 0;
 }
 
@@ -278,7 +274,6 @@
 
 .footer {
   display: flex;
-  position: relative;
   min-height: 350px;
   box-sizing: border-box;
   background-color: #1f1f1f;
