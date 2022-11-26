@@ -23,7 +23,7 @@
     </header>
 
     <main class="content">
-      <section class="description">
+      <article class="description" aria-label="Главные проблемы в обучении">
         <div class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в&nbsp;обучении</h2>
           <div class="two-columns__main-text">
@@ -39,9 +39,9 @@
               обучения в Практикуме.</p>
           </div>
         </div>
-      </section>
+      </article>
 
-      <section class="digits">
+      <article class="digits" aria-label="Цифры и факты про учёбу и мозг">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
@@ -81,16 +81,16 @@
             <p class="table__text">Открытие условного рефлекса</p>
           </li>
         </ul>
-      </section>
+      </article>
 
-      <section class="feynman">
+      <section class="feynman" aria-label="Метод Фейнмана">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a class="feynman__link" href="#">Подробнее</a>
         <img class="feynman__portrait" src="./images/feynman.png" alt="Фотопортрет Ричарда Фейнмана">
       </section>
 
-      <section class="kaufman">
+      <article class="kaufman" aria-label="Принципы обучения от Джоша Кауфмана">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <div class="kaufman__triangle"></div>
@@ -136,7 +136,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ol>
-      </section>
+      </article>
 
     </main>
 
@@ -164,6 +164,11 @@
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li>
+              <!-- ДЛЯ РЕВЬЮЕРА
+              В первом код-ревью попросили добавить здесь непустые alt-тексты со ссылкой
+              на статью на Хабре. Однако прямо в этой статье написано, что в таком случае
+              alt-текст стоит оставлять пустым, чтобы при прочтении скрин-ридером он не дублировал
+              надпись справа от иконки. https://habr.com/ru/post/341810/ Раздел «Иконки с текстом» -->
               <a href="#" class="footer__column-link">
                 <img src="./images/youtube-icon.svg"
                 class="footer__social-icon"
