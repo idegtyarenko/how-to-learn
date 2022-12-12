@@ -1,0 +1,10 @@
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 1.15;
+  font-size: 24px;
+  z-index: 10;
+  position: relative;
+}
