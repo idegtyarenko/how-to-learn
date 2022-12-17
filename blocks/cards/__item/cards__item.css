@@ -1,11 +1,5 @@
 .cards__item {
   width: 240px;
-  margin-right: 100px;
-  padding: 60px 0 0;
   list-style: none;
   text-align: center;
-}
-
-.cards__item:nth-child(3n) {
-  margin: 0;
 }
